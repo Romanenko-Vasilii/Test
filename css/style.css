@@ -304,5 +304,35 @@ template {
 [hidden] {
   display: none; }
 
-body {
-  background-color: red; }
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%; }
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.wrapper {
+  background: #E5E5E5;
+  width: 1280px;
+  height: 650px; }
+
+.main {
+  width: 1120px;
+  display: flex; }
+
+.product {
+  width: 560px;
+  height: 500px;
+  background: linear-gradient(180deg, #428A60 0%, #35734F 100%); }
+  .product__title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 130%; }
