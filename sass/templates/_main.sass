@@ -19,19 +19,18 @@ body
   justify-content: center
   align-items: center
 
-.main
+.main  //разметка основного блока
   width: 1120px
   display: flex
   
-
-.product
+.product  //разметка "лево" части
   width: 560px
   height: 500px
   background: linear-gradient(180deg, #428A60 0%, #35734F 100%)
   display: flex
   flex-direction: column
   position: relative
-  &::after
+  &::after  // фоновые кольцо
       content: ''
       width: 688px
       height: 688px
@@ -39,10 +38,10 @@ body
       border-radius: 50%
       opacity: 0.03
       display: block
-      position: relative
-      margin-top: -520px
-      margin-left: 150px
-  &__title
+      position: absolute
+      margin-top: -86px
+      margin-left: 229px
+  &__title  // верхняя надпись
     font-style: normal
     font-weight: bold
     font-size: 18px
@@ -51,9 +50,9 @@ body
     margin: 42px 0 8px 40px
     position: relative
     z-index: 10
-    &--lower
+    &--lower //позиционирование нижней надписи
       margin: -27px 0 0 40px
-  &__picture
+  &__picture //фоновый круг
     width: 398px
     height: 398px
     background: #428A60
@@ -61,29 +60,19 @@ body
     margin: 0 0 0 20px
     position: relative
     z-index: 10
-    &::after
-      // content: ''
-      // width: 688px
-      // height: 688px
-      // border: 20px solid #FFFFFF
-      // border-radius: 50%
-      // opacity: 0.03
-      // display: block
-      // // position: relative
-      // margin-top: -520px
-      // margin-left: 150px
-  &__img
+  &__img //картинка с продуктом
     margin: 140px 0 0 37px
-    
 
-.аpplication
+.аpplication //разметка "право"
   width: 560px
   height: 500px
   background: #FFFFFF
   box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1)
   border-radius: 1px
+  position: relative
+  z-index: 10
 
-.title
+.title //разметка заголовока
   width: 100%
   height: 136px
   display: flex
@@ -91,7 +80,7 @@ body
   align-items: center
   background: #F8F8F8
   border-top-right-radius: 30px
-  &__text
+  &__text //текст заголовока
     width: 303px
     height: 78px
     font-size: 30px
@@ -101,16 +90,15 @@ body
     color: rgba(33, 33, 33, 1)
     text-align: center
 
-.form
+.form //форма заказа
   display: flex
   flex-direction: column
   padding: 53px 0 0 117px
   &__label
     margin: 0 0 10px 0
-  
   &__phone
     margin: 17px 0 0 0
-.input
+.input //стили полей ввода
     width: 320px
     height: 50px
     background:  #F8F8F8
@@ -120,10 +108,16 @@ body
     font-weight: 600
     font-size: 14px
     line-height: 130%
-    opacity: 0.2
+    opacity: 
     padding: 0 0 0 20px
     
-.label
+input[type=text]::placeholder //цвет текста в полях ввода
+  color: rgba(33, 33, 33, 0.2)
+input[type=tel]::placeholder //цвет текста в полях ввода
+  color: rgba(33, 33, 33, 0.2)
+
+    
+.label //текст над input
   font-style: normal
   font-weight: 800
   font-size: 12px
@@ -138,9 +132,39 @@ body
   &__tel
     width: 184px
     height: 50px
-  &__sumbol
-    width: 116.18px
-
+  &__select
+    width: 116px
+    height: 50px
+    background:  #F8F8F8
+    border: 1px solid #E4E4E4FF
+    border-radius: 5px
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 130%
+    opacity: 
+    margin-left: 20px
+    appearance: none
+    outline: none
+    
+  &__group
+    margin: 10px 0 0 0
+    display: flex
+.select__wrap
+  width: 116px
+  position: relative
+  &::before
+    content: ""
+    position: absolute
+    top: 50%
+    right: 15px
+    transform: translate(50%)
+    display: block
+    width: 8px
+    height: 8px
+    background: red
+.opt__ru
+  background-image: url(../img/icon-flag.png)
 .button
   &__form
     width: 320px
@@ -153,10 +177,12 @@ body
     background: #428A60
     border-radius: 5px
     border: none
-    margin: 49px 0 0 0
-    background-image: url(img/arrow.svg)
-      
-    
+    margin: 40px 0 0 0
+    cursor: pointer
+  &__img
+    margin: 0 0 0 3px
+  
+
 
 
 

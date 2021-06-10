@@ -38,21 +38,25 @@
           <!-- /.application__title -->
           
           <form class="form application__form">
-              <label class="label form__label">ваше <span class="label__text">имя</span> </label>
-              <input type="text"  class="input form__input " placeholder="Алексей">
+            <label class="label form__label">ваше <span class="label__text">имя</span> </label>
+            <input type="text"  class="input form__input " placeholder="Алексей">
               <div class="phone form__phone">
                 <label class="label form__label">ваш <span class="label__text label__text--phone">телефон</span> </label>
               <div class="phone__group">
-                <input type="text"  class="input phone__tel" placeholder="+7 (123) 456 78-90">
-                <input type="text" class="input phone__sumbol" placeholder="RU">
-
+                <input type="tel" name="userPhone"  class="input phone__tel" placeholder="+7 (123) 456 78-90">
+                <div class="select__wrap">
+                  <select  id="" class="select phone__select">
+                    <option value="1" class="opt__ru">  </option>
+                  </select>
+                </div>
+                <!-- /.select__wrap -->
               </div>
               <!-- /.form__group -->
               </div>
               
               
               <button class="button__form">
-                Заказать
+                Заказать <img src="img/Vector 2.svg" alt="" class="button__img">
               </button>
               <!-- /.button__form -->
           </form>
@@ -69,3 +73,4 @@
   <!-- /.container -->
 </body>
 </html>
+

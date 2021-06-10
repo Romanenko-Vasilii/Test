@@ -344,9 +344,9 @@ body {
     border-radius: 50%;
     opacity: 0.03;
     display: block;
-    position: relative;
-    margin-top: -520px;
-    margin-left: 150px; }
+    position: absolute;
+    margin-top: -86px;
+    margin-left: 229px; }
   .product__title {
     font-style: normal;
     font-weight: bold;
@@ -374,7 +374,9 @@ body {
   height: 500px;
   background: #FFFFFF;
   box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1);
-  border-radius: 1px; }
+  border-radius: 1px;
+  position: relative;
+  z-index: 10; }
 
 .title {
   width: 100%;
@@ -413,8 +415,25 @@ body {
   font-weight: 600;
   font-size: 14px;
   line-height: 130%;
-  opacity: 0.2;
   padding: 0 0 0 20px; }
+
+input[type=text]::-moz-placeholder {
+  color: rgba(33, 33, 33, 0.2); }
+
+input[type=text]:-ms-input-placeholder {
+  color: rgba(33, 33, 33, 0.2); }
+
+input[type=text]::placeholder {
+  color: rgba(33, 33, 33, 0.2); }
+
+input[type=tel]::-moz-placeholder {
+  color: rgba(33, 33, 33, 0.2); }
+
+input[type=tel]:-ms-input-placeholder {
+  color: rgba(33, 33, 33, 0.2); }
+
+input[type=tel]::placeholder {
+  color: rgba(33, 33, 33, 0.2); }
 
 .label {
   font-style: normal;
@@ -431,8 +450,42 @@ body {
   width: 184px;
   height: 50px; }
 
-.phone__sumbol {
-  width: 116.18px; }
+.phone__select {
+  width: 116px;
+  height: 50px;
+  background: #F8F8F8;
+  border: 1px solid #E4E4E4FF;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 130%;
+  margin-left: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none; }
+
+.phone__group {
+  margin: 10px 0 0 0;
+  display: flex; }
+
+.select__wrap {
+  width: 116px;
+  position: relative; }
+  .select__wrap::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(50%);
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: red; }
+
+.opt__ru {
+  background-image: url(../img/icon-flag.png); }
 
 .button__form {
   width: 320px;
@@ -445,5 +498,8 @@ body {
   background: #428A60;
   border-radius: 5px;
   border: none;
-  margin: 49px 0 0 0;
-  background-image: url(img/arrow.svg); }
+  margin: 40px 0 0 0;
+  cursor: pointer; }
+
+.button__img {
+  margin: 0 0 0 3px; }
