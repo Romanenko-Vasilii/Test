@@ -30,6 +30,18 @@ body
   background: linear-gradient(180deg, #428A60 0%, #35734F 100%)
   display: flex
   flex-direction: column
+  position: relative
+  &::after
+      content: ''
+      width: 688px
+      height: 688px
+      border: 20px solid #FFFFFF
+      border-radius: 50%
+      opacity: 0.03
+      display: block
+      position: relative
+      margin-top: -520px
+      margin-left: 150px
   &__title
     font-style: normal
     font-weight: bold
@@ -37,6 +49,8 @@ body
     color: #FFFFFF
     line-height: 130%
     margin: 42px 0 8px 40px
+    position: relative
+    z-index: 10
     &--lower
       margin: -27px 0 0 40px
   &__picture
@@ -45,15 +59,22 @@ body
     background: #428A60
     border-radius: 50%
     margin: 0 0 0 20px
+    position: relative
+    z-index: 10
     &::after
-      content: ''
-      width: 688px
-      height: 688px
-      border: 20px solid #FFFFFF
-      border-radius: 50%
-      opacity: 0.03
+      // content: ''
+      // width: 688px
+      // height: 688px
+      // border: 20px solid #FFFFFF
+      // border-radius: 50%
+      // opacity: 0.03
+      // display: block
+      // // position: relative
+      // margin-top: -520px
+      // margin-left: 150px
   &__img
     margin: 140px 0 0 37px
+    
 
 .аpplication
   width: 560px
