@@ -390,7 +390,7 @@ body {
     width: 303px;
     height: 78px;
     font-size: 30px;
-    font-style: normal;
+    font-style: bolder;
     font-weight: 800;
     line-height: 130%;
     color: #212121;
@@ -415,7 +415,8 @@ body {
   font-weight: 600;
   font-size: 14px;
   line-height: 130%;
-  padding: 0 0 0 20px; }
+  padding: 0 0 0 20px;
+  outline: none; }
 
 input[type=text]::-moz-placeholder {
   color: rgba(33, 33, 33, 0.2); }
@@ -436,7 +437,6 @@ input[type=tel]::placeholder {
   color: rgba(33, 33, 33, 0.2); }
 
 .label {
-  font-style: normal;
   font-weight: 800;
   font-size: 12px;
   line-height: 130%;
@@ -450,42 +450,9 @@ input[type=tel]::placeholder {
   width: 184px;
   height: 50px; }
 
-.phone__select {
-  width: 116px;
-  height: 50px;
-  background: #F8F8F8;
-  border: 1px solid #E4E4E4FF;
-  border-radius: 5px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 130%;
-  margin-left: 20px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  outline: none; }
-
 .phone__group {
   margin: 10px 0 0 0;
   display: flex; }
-
-.select__wrap {
-  width: 116px;
-  position: relative; }
-  .select__wrap::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translate(50%);
-    display: block;
-    width: 8px;
-    height: 8px;
-    background: red; }
-
-.opt__ru {
-  background-image: url(../img/icon-flag.png); }
 
 .button__form {
   width: 320px;
@@ -503,3 +470,35 @@ input[type=tel]::placeholder {
 
 .button__img {
   margin: 0 0 0 3px; }
+
+.select {
+  display: flex;
+  width: 116px;
+  height: 50px;
+  margin: 0 0 0 20px;
+  background: #F8F8F8;
+  border: 1px solid #E4E4E4FF;
+  border-radius: 5px;
+  align-items: center;
+  font-size: 16px;
+  justify-content: space-evenly;
+  padding: 5px 9px;
+  line-height: 130%;
+  cursor: pointer; }
+
+.lang {
+  margin: 4px 0 0 0; }
+
+.flag {
+  width: 26px;
+  height: 18px;
+  background-image: url(../img/icon-flag.png);
+  margin: -0px 0 0 0; }
+
+.arrow {
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #212121;
+  border-right: 2px solid #212121;
+  transform: rotate(135deg);
+  margin: -0px 0 0 0; }
