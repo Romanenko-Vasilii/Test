@@ -330,7 +330,7 @@ body {
   display: flex; }
 
 .product {
-  width: 560px;
+  width: 50%;
   height: 500px;
   background: linear-gradient(180deg, #428A60 0%, #35734F 100%);
   display: flex;
@@ -370,7 +370,7 @@ body {
     margin: 140px 0 0 37px; }
 
 .аpplication {
-  width: 560px;
+  width: 50%;
   height: 500px;
   background: #FFFFFF;
   box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1);
@@ -502,3 +502,69 @@ input[type=tel]::placeholder {
   border-right: 2px solid #212121;
   transform: rotate(135deg);
   margin: -0px 0 0 0; }
+
+@media screen and (max-width: 320px) {
+  .container {
+    width: 320px;
+    height: 846px; }
+  .wrapper {
+    width: 100%;
+    flex-direction: column;
+    align-items: center; }
+  .main {
+    width: 100%;
+    flex-direction: column;
+    align-items: center; }
+  .product {
+    width: 320px;
+    height: auto;
+    background: #FFFFFF;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 20px; }
+    .product::after {
+      display: none; }
+    .product__title {
+      width: 50%;
+      color: #212121;
+      margin: 0 00px 0 0;
+      order: 1; }
+      .product__title--lower {
+        width: 50%;
+        order: 2;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end; }
+    .product__picture {
+      width: 202px;
+      height: 202px;
+      background: #428A60;
+      border-radius: 50%;
+      margin: 0 0 0 20px;
+      position: relative;
+      z-index: 10;
+      order: 3; }
+    .product__img {
+      width: 223px;
+      height: 122px;
+      margin: 48px 0 0 0; }
+  .аpplication {
+    width: 100%; }
+  .title {
+    width: 100%;
+    padding: 0 20px;
+    background: transparent; }
+  br {
+    display: none; }
+  .form {
+    padding: 0 20px; }
+  .input {
+    width: 280px; }
+  .phone__tel {
+    width: 174px; }
+  .select {
+    width: 96px;
+    padding: 5px 0px; }
+  .button__form {
+    width: 280px; } }
