@@ -328,6 +328,8 @@ body {
 .main {
   width: 1120px;
   display: flex; }
+  .main__footer {
+    display: none; }
 
 .product {
   width: 50%;
@@ -500,9 +502,6 @@ input[type=tel]::placeholder {
   border-right: 2px solid #212121;
   transform: rotate(135deg);
   margin: -0px 0 0 0; }
-
-.footer {
-  display: none; }
 
 @media screen and (max-width: 320px) {
   .container {
