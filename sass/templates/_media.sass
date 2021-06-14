@@ -1,11 +1,13 @@
 @media screen and ( max-width: 320px  )
   .container
     width: 320px
-    height: 846px
+    height: 100vh
+    background: #E5E5E5
 
   
   .wrapper
     width: 100%
+    height: auto
     flex-direction: column
     align-items: center
     // padding-top: 200px
@@ -15,6 +17,8 @@
     width: 100%
     flex-direction: column
     align-items: center
+    margin-top: 60px
+
   
   .product
     width: 320px
@@ -23,13 +27,13 @@
     flex-direction: row
     flex-wrap: wrap
     justify-content: space-evenly
-    padding: 0 20px
+    padding: 40px 20px 20px 20px
     &::after  // фоновые кольцо
       display: none 
     &__title
       width: 50%
       color: #212121
-      margin: 0 00px 0 0 
+      margin: 0 0 9px 0 
       order: 1
       
       &--lower
@@ -45,17 +49,18 @@
       // padding: 0 50px
       background: #428A60
       border-radius: 50%
-      margin: 0 0 0 20px
+      margin: 0
       position: relative
       z-index: 10
       order: 3
     &__img //картинка с продуктом
       width: 223px
       height: 122px
-      margin: 48px 0 0 0
+      margin: 48px 0 0 -2px
   
   .аpplication
     width: 100%
+    height: auto
   .title
     width: 100%
     padding: 0 20px
@@ -75,6 +80,11 @@
   .button
     &__form
       width: 280px
+  .footer
+    display: block
+    font-size: 14px
+    color: #212121
+
   
 
       

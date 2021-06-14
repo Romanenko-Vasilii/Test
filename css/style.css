@@ -387,10 +387,9 @@ body {
   background: #F8F8F8;
   border-top-right-radius: 30px; }
   .title__text {
-    width: 303px;
+    width: 310px;
     height: 78px;
-    font-size: 30px;
-    font-style: bolder;
+    font-size: 30.5px;
     font-weight: 800;
     line-height: 130%;
     color: #212121;
@@ -403,7 +402,7 @@ body {
   .form__label {
     margin: 0 0 10px 0; }
   .form__phone {
-    margin: 17px 0 0 0; }
+    margin: 20px 0 0 0; }
 
 .input {
   width: 320px;
@@ -465,7 +464,7 @@ input[type=tel]::placeholder {
   background: #428A60;
   border-radius: 5px;
   border: none;
-  margin: 40px 0 0 0;
+  margin: 37px 0 0 0;
   cursor: pointer; }
 
 .button__img {
@@ -475,7 +474,7 @@ input[type=tel]::placeholder {
   display: flex;
   width: 116px;
   height: 50px;
-  margin: 0 0 0 20px;
+  margin: -2px 0 0 20px;
   background: #F8F8F8;
   border: 1px solid #E4E4E4FF;
   border-radius: 5px;
@@ -483,7 +482,6 @@ input[type=tel]::placeholder {
   font-size: 16px;
   justify-content: space-evenly;
   padding: 5px 9px;
-  line-height: 130%;
   cursor: pointer; }
 
 .lang {
@@ -509,15 +507,18 @@ input[type=tel]::placeholder {
 @media screen and (max-width: 320px) {
   .container {
     width: 320px;
-    height: 846px; }
+    height: 100vh;
+    background: #E5E5E5; }
   .wrapper {
     width: 100%;
+    height: auto;
     flex-direction: column;
     align-items: center; }
   .main {
     width: 100%;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    margin-top: 60px; }
   .product {
     width: 320px;
     height: auto;
@@ -525,13 +526,13 @@ input[type=tel]::placeholder {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 0 20px; }
+    padding: 40px 20px 20px 20px; }
     .product::after {
       display: none; }
     .product__title {
       width: 50%;
       color: #212121;
-      margin: 0 00px 0 0;
+      margin: 0 0 9px 0;
       order: 1; }
       .product__title--lower {
         width: 50%;
@@ -544,16 +545,17 @@ input[type=tel]::placeholder {
       height: 202px;
       background: #428A60;
       border-radius: 50%;
-      margin: 0 0 0 20px;
+      margin: 0;
       position: relative;
       z-index: 10;
       order: 3; }
     .product__img {
       width: 223px;
       height: 122px;
-      margin: 48px 0 0 0; }
+      margin: 48px 0 0 -2px; }
   .аpplication {
-    width: 100%; }
+    width: 100%;
+    height: auto; }
   .title {
     width: 100%;
     padding: 0 20px;
@@ -570,4 +572,8 @@ input[type=tel]::placeholder {
     width: 96px;
     padding: 5px 0px; }
   .button__form {
-    width: 280px; } }
+    width: 280px; }
+  .footer {
+    display: block;
+    font-size: 14px;
+    color: #212121; } }
