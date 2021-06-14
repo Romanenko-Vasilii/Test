@@ -416,7 +416,7 @@ body {
   font-weight: 600;
   font-size: 14px;
   line-height: 130%;
-  padding: 0 0 0 18px;
+  padding: 0 0 0 19px;
   outline: none; }
 
 input[type=text]::-moz-placeholder {
@@ -476,7 +476,7 @@ input[type=tel]::placeholder {
   display: flex;
   width: 116px;
   height: 50px;
-  margin: -2px 0 0 20px;
+  margin: -0px 0 0 20px;
   background: #F8F8F8;
   border: 1px solid #E4E4E4FF;
   border-radius: 5px;
@@ -487,7 +487,7 @@ input[type=tel]::placeholder {
   cursor: pointer; }
 
 .lang {
-  margin: 4px 0 0 0; }
+  margin: 0px 0 0 0; }
 
 .flag {
   width: 26px;
@@ -501,7 +501,7 @@ input[type=tel]::placeholder {
   border-top: 2px solid #212121;
   border-right: 2px solid #212121;
   transform: rotate(135deg);
-  margin: -0px 0 0 0; }
+  margin: -3px 0 0 0; }
 
 @media screen and (max-width: 320px) {
   .container {
