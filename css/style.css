@@ -387,6 +387,7 @@ body {
   justify-content: center;
   align-items: center;
   background: #F8F8F8;
+  border-radius: 30px;
   margin-bottom: 27px; }
   .title__text {
     width: 310px;
