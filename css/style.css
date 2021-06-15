@@ -6,6 +6,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 html {
   line-height: 1.15;
   /* 1 */
@@ -529,7 +530,7 @@ input[type=tel]::placeholder {
       background: transparent;
       text-align: center;
       padding: 11px 0;
-      margin-top: 26px; }
+      margin-top: 27px; }
   .product {
     width: 320px;
     height: auto;
@@ -589,10 +590,15 @@ input[type=tel]::placeholder {
   .button__form {
     width: 280px;
     margin-top: 28px; }
-  .symbol {
+  .fa-lock {
+    content: '\f023';
+    font-family: fontawesome !important;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
     color: #428A60;
-    margin: 0 16.14px;
-    font-size: 16px; }
+    margin: 0 17.14px;
+    font-size: 18px; }
   .lang {
     margin: 0; }
   .arrow {
