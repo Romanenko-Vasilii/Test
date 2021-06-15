@@ -309,7 +309,7 @@ template {
   box-sizing: border-box; }
 
 body {
-  font-family: Montserrat, sans-serif; }
+  font-family: 'Montserrat'; }
 
 .container {
   height: 100vh;
@@ -387,7 +387,7 @@ body {
   justify-content: center;
   align-items: center;
   background: #F8F8F8;
-  border-radius: 30px;
+  border-radius: 0 30px 0 0;
   margin-bottom: 27px; }
   .title__text {
     width: 310px;
@@ -520,17 +520,16 @@ input[type=tel]::placeholder {
     align-items: center;
     margin-top: 60px;
     margin-bottom: 59px;
-    padding-bottom: 28px;
     background: #FFFFFF; }
     .main__footer {
       width: 100%;
       display: block;
       font-size: 14px;
       color: #212121;
-      background: #FFFFFF;
+      background: transparent;
       text-align: center;
       padding: 11px 0;
-      margin: 26px; }
+      margin-top: 26px; }
   .product {
     width: 320px;
     height: auto;
